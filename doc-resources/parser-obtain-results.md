@@ -2,9 +2,9 @@
 
 The easiest approach for importing Debricked results into SSC is through [fcli](https://github.com/fortify-ps/fcli), using the `fcli ssc appversion-artifact import debricked command`. This command will download the Debricked CycloneDX SBOM file using the Debricked REST API, and then upload the SBOM file to SSC for processing by this parser plugin. 
 
-When using fcli, there is no need to manually obtain the SBOM file, preparing a proper SSC third-party results zip-file, and uploading this zip-file to SSC. With this approach, the information in the remainder of this document can be disregarded.
+When using fcli, there is no need to manually obtain the SBOM file, preparing a proper SSC third-party results zip-file, and uploading this zip-file to SSC. With this approach, the information in the [Manual import](#manual-import) and [Upload results](#upload-results) sections can be ignored.
 
-### Manually obtaining the SBOM file from Debricked
+### Manual import
 
 The Debricked website allows for generating a report in CycloneDX SBOM format using the following steps:
 
