@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.1](https://www.github.com/fortify/fortify-ssc-parser-debricked-cyclonedx/compare/v1.0.0...v1.0.1) (2023-09-12)
+
+
+### Bug Fixes
+
+* Compatibility update for Java 17 / SSC 23.2 ([86ee557](https://www.github.com/fortify/fortify-ssc-parser-debricked-cyclonedx/commit/86ee557d215b9622c3dcf8e2e87c80b01ae4e99e))
+
 ## 1.0.0 (2023-02-02)
 
 
