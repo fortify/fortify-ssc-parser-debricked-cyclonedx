@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://www.github.com/fortify/fortify-ssc-parser-debricked-cyclonedx/compare/v1.0.1...v1.1.0) (2023-09-15)
+
+
+### Features
+
+* Add support for new SSC 23.2 download SBOM feature ([a5a44aa](https://www.github.com/fortify/fortify-ssc-parser-debricked-cyclonedx/commit/a5a44aa1c3a4bd39be427626e1aa084bee76bbc5))
+
 ### [1.0.1](https://www.github.com/fortify/fortify-ssc-parser-debricked-cyclonedx/compare/v1.0.0...v1.0.1) (2023-09-12)
 
 
