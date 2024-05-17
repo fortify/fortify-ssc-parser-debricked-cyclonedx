@@ -88,7 +88,7 @@ These sections describe how to install, upgrade and uninstall the parser plugin 
 
 ### Automated import
 
-The easiest approach for importing Debricked results into SSC is through [fcli](https://github.com/fortify-ps/fcli), using the `fcli ssc appversion-artifact import debricked command`. This command will download the Debricked CycloneDX SBOM file using the Debricked REST API, and then upload the SBOM file to SSC for processing by this parser plugin. 
+The easiest approach for importing Debricked results into SSC is through [fcli](https://github.com/fortify-ps/fcli), using the `fcli ssc artifact import-debricked` command. This command will download the Debricked CycloneDX SBOM file using the Debricked REST API, and then upload the SBOM file to SSC for processing by this parser plugin. 
 
 When using fcli, there is no need to manually obtain the SBOM file, preparing a proper SSC third-party results zip-file, and uploading this zip-file to SSC. With this approach, the information in the [Manual import](#manual-import) and [Upload results](#upload-results) sections can be ignored.
 
