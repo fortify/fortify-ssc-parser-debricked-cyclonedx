@@ -19,7 +19,6 @@ jobs:
         uses: googleapis/release-please-action@v4
         with:
           release-type: simple
-          package-name: ${{ github.event.repository.name }}
           
       - name: Define production release info
         if: steps.release_please.outputs.release_created
