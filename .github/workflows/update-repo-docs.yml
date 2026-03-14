@@ -1,4 +1,4 @@
-name: update-repo-docs
+﻿name: update-repo-docs
 
 on:
   workflow_dispatch:
@@ -7,7 +7,11 @@ on:
   push:
     branches:
       - main
+
+permissions: read-all
       
 jobs:
   update-repo-docs:
+    permissions:
+      contents: write
     uses: fortify/shared-doc-resources/.github/workflows/update-repo-docs.yml@main
