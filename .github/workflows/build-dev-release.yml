@@ -1,7 +1,9 @@
-on: 
+﻿on: 
   push: 
     branches:
       - '**'
+
+permissions: read-all
 
 env:
   DIST_DIR: ${{ github.workspace }}/build/dist
@@ -10,6 +12,8 @@ name: Build development release
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Check-out source code
         uses: actions/checkout@v4
@@ -54,12 +58,6 @@ jobs:
         run: |
           files=$(find "${{ env.DIST_DIR }}" -type f -printf "%p ")
           gh release delete ${{ env.RELEASE_TAG }} -y || true
-          gh release create ${{ env.RELEASE_TAG }} -p -t "Development Release - ${{ env.BRANCH }} branch" -n 'See `Assets` section below for latest build artifacts' ${files}
+          gh release create ${{ env.RELEASE_TAG }} -p -t "Development Release - ${{ env.BRANCH }} branch" -n 'See \`Assets\` section below for latest build artifacts' ${files}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
-          
-      
-          
-      
-
-      
