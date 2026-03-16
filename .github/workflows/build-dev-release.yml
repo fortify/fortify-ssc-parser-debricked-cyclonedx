@@ -46,7 +46,7 @@ jobs:
           path: ${{ env.DIST_DIR }}
           
       - name: Update development release tag
-        uses: richardsimko/update-tag@v1
+        uses: richardsimko/update-tag@aab2434e9a5040687874aa39d1c6377ec0cb0d94
         if: env.DO_RELEASE
         with:
           tag_name: ${{ env.RELEASE_TAG }}
