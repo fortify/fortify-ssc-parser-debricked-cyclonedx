@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.2](https://github.com/fortify/fortify-ssc-parser-debricked-cyclonedx/compare/v1.2.1...v1.2.2) (2026-08-12)
+
+
+### Bug Fixes
+
+* Upgrade dependency versions ([54a9c4d](https://github.com/fortify/fortify-ssc-parser-debricked-cyclonedx/commit/54a9c4db67776be2472deba3c2b1c33580e2a032))
+
 ## [1.2.1](https://github.com/fortify/fortify-ssc-parser-debricked-cyclonedx/compare/v1.2.0...v1.2.1) (2026-03-16)
 
 
