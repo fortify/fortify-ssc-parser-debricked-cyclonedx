@@ -17,3 +17,5 @@ jobs:
       contents: read
       security-events: write
     secrets: inherit
+    with:
+      java-version: '17'
