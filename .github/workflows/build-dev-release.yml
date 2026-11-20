@@ -18,6 +18,12 @@ jobs:
     steps:
       - name: Check-out source code
         uses: fortify/shared-github/actions/3rdparty/actions/checkout/v6@5ad1afec0f56a21b03f0887eea35505cb6a66554
+
+      - name: Set up Java
+        uses: fortify/shared-github/actions/3rdparty/actions/setup-java/v5@5ad1afec0f56a21b03f0887eea35505cb6a66554
+        with:
+          distribution: temurin
+          java-version: '17'
       
       - name: Define development release info
         if: startsWith(github.ref, 'refs/heads/')
